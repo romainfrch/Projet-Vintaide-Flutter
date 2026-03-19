@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "748305256581",
+    "project_id": "vintaide",
+    "storage_bucket": "vintaide.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748305256581:android:0bf7eb558206af0ddfd9ec",
+        "android_client_info": {
+          "package_name": "com.example.vintaide"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzZzQfFJG6tr3gxYtQEXVEMg6-pZpp0Kk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
