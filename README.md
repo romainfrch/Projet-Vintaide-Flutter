@@ -43,38 +43,38 @@ flutter run -d chrome
 
 ## ✅ Fonctionnalités réalisées
 
-### US#1 – Interface de login 
+### US#1 - Interface de login 
 - Page de connexion avec champs Login et Password (obfusqué)
 - Vérification des identifiants en base Firestore (collection `users`)
 - Redirection vers la liste des vêtements si connexion OK
 - Application reste fonctionnelle si les champs sont vides ou si l'utilisateur n'existe pas
 
-### US#2 – Liste des vêtements 
+### US#2 - Liste des vêtements 
 - Affichage de tous les vêtements récupérés en temps réel depuis Firestore (collection `vetements`)
 - Chaque article affiche : image, titre, catégorie, taille, prix
 - Navigation via `BottomNavigationBar` (Acheter / Panier / Profil)
 - Clic sur un article → accès au détail (US#3)
 
-### US#3 – Détail d'un vêtement 
+### US#3 - Détail d'un vêtement 
 - Affichage complet : image, titre, catégorie, taille, marque, prix
 - Bouton **Retour** vers la liste
 - Bouton **Ajouter au panier** (ajout dans `carts/{login}/items`)
 
-### US#4 – Panier 
+### US#4 - Panier 
 - Liste des vêtements du panier de l'utilisateur connecté, récupérée en temps réel depuis Firestore
 - Stocké dans la collection `carts/{login}/items` → persistant entre les sessions
 - Affichage : image, titre, catégorie, taille, prix, quantité
 - Total général calculé dynamiquement (prix × quantité)
 - Suppression d'un article via la croix → total mis à jour en temps réel
 
-### US#5 – Profil utilisateur 
+### US#5 - Profil utilisateur 
 - Affichage et modification des données récupérées depuis `users/{login}` :
   login (readonly), password (obfusqué), anniversaire (date picker), adresse, code postal (clavier numérique), ville
 - Bouton **Valider** pour sauvegarder en base Firestore
 - Bouton **Ajouter un nouveau vêtement** → redirige vers le formulaire US#6
 - Bouton **Se déconnecter** → efface la session et retourne au login
 
-### US#6 – Ajout d'un vêtement avec détection IA 
+### US#6 - Ajout d'un vêtement avec détection IA 
 - Formulaire d'ajout accessible depuis le profil
 - Champs : image, titre, catégorie (détectée automatiquement), taille, marque, prix
 - Image compressée en JPEG (max 512px, qualité 75%) avant stockage en base64 dans Firestore
@@ -84,7 +84,7 @@ flutter run -d chrome
 
 ---
 
-## 🤖 Fonctionnalité IA – Détection de catégorie par vision
+## 🤖 Fonctionnalité IA - Détection de catégorie par vision
 
 La catégorie est détectée automatiquement par **analyse visuelle de l'image** via un modèle de deep learning, sans API externe, sans compte tiers, entièrement dans le navigateur.
 
