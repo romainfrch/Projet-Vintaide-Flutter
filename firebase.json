@@ -1,0 +1,39 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "vintaide",
+          "appId": "1:748305256581:android:0bf7eb558206af0ddfd9ec",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "vintaide",
+          "configurations": {
+            "android": "1:748305256581:android:0bf7eb558206af0ddfd9ec",
+            "ios": "1:748305256581:ios:8261dd7ac7c97236dfd9ec",
+            "macos": "1:748305256581:ios:8261dd7ac7c97236dfd9ec",
+            "web": "1:748305256581:web:069deef70ce41326dfd9ec",
+            "windows": "1:748305256581:web:d76d06566076a491dfd9ec"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ]
+}
